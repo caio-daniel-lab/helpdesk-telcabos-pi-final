@@ -98,8 +98,17 @@ public class Main {
         }
 
         // -------------------------------------------------------
+        // TESTE 6: Calcular prazo de atendimento (SLA) por prioridade
+        // -------------------------------------------------------
+        System.out.println("\n--- TESTE 6: Prazo de atendimento (SLA) ---");
+        System.out.println("Prioridade Alta  -> " + helpdesktelcabos.service.CalculadoraPrioridade.calcularPrazoAtendimentoEmHoras("Alta") + "h (esperado: 4h)");
+        System.out.println("Prioridade Media -> " + helpdesktelcabos.service.CalculadoraPrioridade.calcularPrazoAtendimentoEmHoras("Media") + "h (esperado: 24h)");
+        System.out.println("Prioridade Baixa -> " + helpdesktelcabos.service.CalculadoraPrioridade.calcularPrazoAtendimentoEmHoras("Baixa") + "h (esperado: 72h)");
+
+        // -------------------------------------------------------
         System.out.println("\n================================================");
         System.out.println("  TODOS OS TESTES CONCLUIDOS");
+        System.out.println("  (testes unitarios JUnit estao na pasta /test)");
         System.out.println("================================================");
     }
 }
